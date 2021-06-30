@@ -8,7 +8,7 @@ import java.sql.DriverManager;
 
 public final class MysqlConnectionProvider extends ConnectionProvider {
 
-	private static final String MYSQL_CONNECTION_STRING = "jdbc:mysql://<host>:<port>/<database>";
+	private static final String MYSQL_CONNECTION_STRING = "jdbc:mysql://<host>:<port>/<database>?autoReconnect=true";
 
 	private final String host;
 	private final int port;
